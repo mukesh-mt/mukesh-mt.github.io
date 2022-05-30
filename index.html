@@ -1,0 +1,15 @@
+<html>
+<script>
+    window.onload = function() {
+        var loc = window.location.toString()
+        params = loc.split('==')[1]
+        var iframe = document.createElement('iframe');
+        iframe.src = params;
+        iframe.style = "width: 100%; height: 100%;";
+        iframe.allow="accelerometer;magnetometer;fullscreen;gyroscope"
+        document.body.appendChild(iframe);
+    };
+</script>
+<body id="iF" style="padding: 0; margin: 0">
+</body>
+</html>
